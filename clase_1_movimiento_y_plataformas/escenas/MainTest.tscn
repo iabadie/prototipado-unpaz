@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://escenas/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://escenas/platform/Platform.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenas/enemy/Enemy.tscn" type="PackedScene" id=3]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 194.947, 76.058 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Platform" parent="." instance=ExtResource( 2 )]
+position = Vector2( 509.125, 172.951 )
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+position = Vector2( 741.888, 110.481 )
