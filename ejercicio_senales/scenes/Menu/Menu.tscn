@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Buttons/Reset/Reset.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 759.99, 33.6962 )
+
+[node name="Menu" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 516.671, 323.633 )
+scale = Vector2( 3.2109, 3.2109 )
+texture = ExtResource( 1 )
+
+[node name="RedGenerator" parent="." instance=ExtResource( 3 )]
+margin_left = 102.116
+margin_top = 72.2393
+margin_right = 230.116
+margin_bottom = 200.239
+
+[node name="VioletGenerator" parent="." instance=ExtResource( 2 )]
+margin_left = 772.557
+margin_top = 67.459
+margin_right = 900.557
+margin_bottom = 195.459
+
+[node name="Reset" parent="." instance=ExtResource( 4 )]
+margin_left = 430.229
+margin_top = 246.187
+margin_right = 582.229
+margin_bottom = 313.187
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2( 513.885, 577.225 )
+
+[node name="Collision" type="CollisionShape2D" parent="Floor"]
+shape = SubResource( 1 )
