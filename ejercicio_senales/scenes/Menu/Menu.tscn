@@ -1,14 +1,16 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/background.png" type="Texture" id=1]
 [ext_resource path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/Buttons/Reset/Reset.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Menu/Menu.gd" type="Script" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 759.99, 33.6962 )
 
 [node name="Menu" type="Node2D"]
+script = ExtResource( 5 )
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 516.671, 323.633 )
@@ -38,3 +40,14 @@ position = Vector2( 513.885, 577.225 )
 
 [node name="Collision" type="CollisionShape2D" parent="Floor"]
 shape = SubResource( 1 )
+
+[node name="CountLabel" type="Label" parent="."]
+margin_left = 427.84
+margin_top = 215.115
+margin_right = 628.84
+margin_bottom = 246.115
+text = "Cantidad de Instancias:
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
