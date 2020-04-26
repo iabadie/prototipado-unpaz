@@ -36,11 +36,20 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MenuButton" parent="Panel/VerticalContainer" instance=ExtResource( 1 )]
+[node name="BackgroundParallax" parent="Panel/VerticalContainer" instance=ExtResource( 1 )]
 margin_left = 50.0
-margin_top = 175.0
+margin_top = 148.0
 margin_right = 350.0
-margin_bottom = 225.0
+margin_bottom = 198.0
 size_flags_horizontal = 4
 text = "Background Parallax"
 scene = "res://Scenes/BackgroundParallax/BackgroundParallaxExample.tscn"
+
+[node name="Layers" parent="Panel/VerticalContainer" instance=ExtResource( 1 )]
+margin_left = 50.0
+margin_top = 202.0
+margin_right = 350.0
+margin_bottom = 252.0
+size_flags_horizontal = 4
+text = "Layers"
+scene = "res://Scenes/Layers/Layers.tscn"
