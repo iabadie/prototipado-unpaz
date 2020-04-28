@@ -4,6 +4,7 @@ Códigos de ejemplo actuales:
 
 * Background Parallax
 * Layers
+* Tween Property Animation
 
 
 Cosas que se pueden observar a partir de lo desarrollado:
