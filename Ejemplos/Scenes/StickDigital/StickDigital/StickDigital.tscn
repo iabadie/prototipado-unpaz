@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/StickDigital/StickDigital/StickDigital.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/StickDigital/StickDigital/boton.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 52.2093
+
+[node name="StickDigital" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CenterPosition" type="Position2D" parent="."]
+
+[node name="ButtonImage" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="TouchArea" type="Area2D" parent="."]
+scale = Vector2( 0.995316, 1 )
+
+[node name="TouchAreaCollision" type="CollisionShape2D" parent="TouchArea"]
+position = Vector2( 0.150585, 0 )
+scale = Vector2( 1.00471, 1 )
+shape = SubResource( 1 )
+[connection signal="input_event" from="TouchArea" to="." method="_on_TouchArea_input_event"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Autoload/Autoload.gd" type="Script" id=2]
+
+[node name="Autoload" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Vidas" type="Label" parent="."]
+margin_left = 394.0
+margin_top = 205.0
+margin_right = 633.0
+margin_bottom = 314.0
+text = "Vidas: "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DownLives" type="Button" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 134.328
+margin_top = 312.33
+margin_right = 146.328
+margin_bottom = 332.33
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="UpLives" type="Button" parent="."]
+modulate = Color( 0.117647, 0.686275, 0, 1 )
+margin_left = 579.002
+margin_top = 311.007
+margin_right = 719.002
+margin_bottom = 445.007
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 359.974
+margin_top = 539.299
+margin_right = 499.974
+margin_bottom = 559.299
+text = "IR A LA PANTALLA 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="DownLives" to="." method="_on_DownLives_button_down"]
+[connection signal="button_down" from="UpLives" to="." method="_on_UpLives_button_down"]
+[connection signal="button_down" from="Button" to="." method="_on_Button_button_down"]
