@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/UIControl/Ejemplo2.gd" type="Script" id=1]
+
+[node name="Ejemplo2" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PowerUps" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+margin_top = 104.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/CenterContainer"]
+margin_left = 412.0
+margin_top = 58.0
+margin_right = 612.0
+margin_bottom = 438.0
+custom_constants/separation = 40
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
+margin_right = 200.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 200, 100 )
+text = "AGREGAR"
+
+[node name="Button2" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 140.0
+margin_right = 200.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 200, 100 )
+text = "QUITAR"
+
+[node name="Button3" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
+margin_top = 280.0
+margin_right = 200.0
+margin_bottom = 380.0
+rect_min_size = Vector2( 200, 100 )
+text = "BORRAR TODO"
+[connection signal="button_down" from="VBoxContainer/CenterContainer/VBoxContainer/Button" to="." method="_on_Button_button_down"]
+[connection signal="button_down" from="VBoxContainer/CenterContainer/VBoxContainer/Button2" to="." method="_on_Button2_button_down"]
+[connection signal="button_down" from="VBoxContainer/CenterContainer/VBoxContainer/Button3" to="." method="_on_Button3_button_down"]

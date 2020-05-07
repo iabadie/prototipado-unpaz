@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="PowerUp" type="ColorRect"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 40 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+color = Color( 0.968627, 0.423529, 0.423529, 0.8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
