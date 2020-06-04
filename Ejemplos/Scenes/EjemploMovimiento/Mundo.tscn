@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/EjemploMovimiento/EnemigoBase.tscn" type="PackedScene" id=1]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="EnemigoBase" parent="." instance=ExtResource( 1 )]
+position = Vector2( 119.544, 208.986 )
+posicion1 = Vector2( 200, 100 )
+posicion2 = Vector2( 600, 100 )
+posicion3 = Vector2( 600, 300 )
+posicion4 = Vector2( 200, 300 )
+velocidad = 100
+
+[node name="EnemigoBase2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 126.424, 341.43 )
+posicion1 = Vector2( 200, 500 )
+posicion2 = Vector2( 600, 500 )
+posicion3 = Vector2( 600, 300 )
+posicion4 = Vector2( 200, 300 )
+velocidad = 200
