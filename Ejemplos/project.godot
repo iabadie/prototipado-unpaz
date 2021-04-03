@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Ejemplos"
-run/main_scene="res://Scenes/TouchMobile/Mundo.tscn"
+run/main_scene="res://Scenes/Base.tscn"
 config/icon="res://icon.png"
 
 [autoload]
