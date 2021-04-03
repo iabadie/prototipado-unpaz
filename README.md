@@ -19,4 +19,5 @@ Glosario:
 
 [Clase 3 - movimiento básico](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/clase_3_movimiento)
 
+[Clase 3 complementario - Rigid Body & Kinematic Body](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/complemento_clase3_cuerpos_fisicos)
 
