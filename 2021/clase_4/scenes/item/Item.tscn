@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/starGold.png" type="Texture" id=1]
+[ext_resource path="res://scenes/item/Item.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 21.3212
+
+[node name="Item" type="Area2D" groups=[
+"items_recolectables",
+]]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 0.120949 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -5 )
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+[connection signal="body_entered" from="." to="." method="_on_Item_body_entered"]
