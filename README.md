@@ -21,3 +21,6 @@ Glosario:
 
 [Clase 3 complementario - Rigid Body & Kinematic Body](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/complemento_clase3_cuerpos_fisicos)
 
+[Clase 4 - Señales básicas y Grupos](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/clase_4)
+
+[Clase 5 - Repaso Señales + Conexión manual](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/clase_5_senales)
