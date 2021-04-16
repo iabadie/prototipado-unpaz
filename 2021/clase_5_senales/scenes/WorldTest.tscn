@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Item/Item.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/WorldTest.gd" type="Script" id=3]
+
+[node name="WorldTest" type="Node2D"]
+position = Vector2( -1.258, -1.88702 )
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 536.634, 282.6 )
+
+[node name="Items" type="Node" parent="."]
+
+[node name="Item" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 899.999, 209.4 )
+
+[node name="Item2" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 885.999, 437.4 )
+
+[node name="Item3" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 159.999, 137.4 )
+
+[node name="Item4" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 223.999, 427.4 )
+
+[node name="LabelNode" type="Node2D" parent="."]
+position = Vector2( 379.289, 256.004 )
+scale = Vector2( 5, 5 )
+
+[node name="Label" type="Label" parent="LabelNode"]
+visible = false
+margin_left = -43.527
+margin_top = -1.50961
+margin_right = 15.473
+margin_bottom = 12.4904
+text = "GANASTE"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
