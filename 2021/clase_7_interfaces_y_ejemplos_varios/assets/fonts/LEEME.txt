@@ -1,0 +1,4 @@
+Aquí se encuentran 3 archivos .tres
+estos archivos son archivos de recursos que creamos en el ejemplo, tales como la configuración de tamaño de fuente cake en size 30 y 70, los el recurso de estilos creado para usar en los textos.
+
+Es importante saber cuando es coneniente crear recursos para poder realiar cambios en simultaneo mucho mas facil y tener nuestro juego mas organizado
