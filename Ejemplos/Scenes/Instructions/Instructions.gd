@@ -3,6 +3,7 @@ extends Panel
 export (String) var instructions = ""
 
 func _ready():
+	visible = true
 	$CenterContainer/Text.text = instructions
 	pass
 

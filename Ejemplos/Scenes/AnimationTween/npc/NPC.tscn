@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scenes/AnimationTween/npm/NPC.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/AnimationTween/npc/NPC.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [node name="NPC" type="Sprite"]
