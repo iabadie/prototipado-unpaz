@@ -44,9 +44,9 @@ __meta__ = {
 
 [node name="VerticalContainer" type="GridContainer" parent="Panel/CenterContainer"]
 margin_left = 207.0
-margin_top = 135.0
+margin_top = 100.0
 margin_right = 817.0
-margin_bottom = 465.0
+margin_bottom = 500.0
 custom_constants/vseparation = 20
 custom_constants/hseparation = 10
 columns = 2
@@ -95,24 +95,30 @@ margin_bottom = 260.0
 text = "Stick Digital"
 scene = "res://Scenes/StickDigital/TestWorld.tscn"
 
-[node name="Recursos" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
+[node name="IA" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
 margin_left = 310.0
 margin_top = 210.0
 margin_right = 610.0
 margin_bottom = 260.0
+text = "IA + camara"
+scene = "res://Scenes/IA/scenes/WorldTest.tscn"
+
+[node name="Recursos" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
+margin_top = 280.0
+margin_bottom = 330.0
 text = "Reutilizar recursos"
 scene = "res://Scenes/Recursos/Recursos.tscn"
 
 [node name="Recursos2" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
+margin_left = 310.0
 margin_top = 280.0
+margin_right = 610.0
 margin_bottom = 330.0
 text = "Nodos de Interfaz"
 scene = "res://Scenes/UIControl/Ejemplo2.tscn"
 
 [node name="EjemplosPreguntas" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
-margin_left = 310.0
-margin_top = 280.0
-margin_right = 610.0
-margin_bottom = 330.0
+margin_top = 350.0
+margin_bottom = 400.0
 text = "Ejemplos y Preguntas"
 scene = "res://Scenes/EjemplosPreguntas/EjemplosPreguntas.tscn"
