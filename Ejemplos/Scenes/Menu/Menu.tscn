@@ -122,3 +122,11 @@ margin_top = 350.0
 margin_bottom = 400.0
 text = "Ejemplos y Preguntas"
 scene = "res://Scenes/EjemplosPreguntas/EjemplosPreguntas.tscn"
+
+[node name="Portals" parent="Panel/CenterContainer/VerticalContainer" instance=ExtResource( 1 )]
+margin_left = 310.0
+margin_top = 350.0
+margin_right = 610.0
+margin_bottom = 400.0
+text = "Portales"
+scene = "res://Scenes/Teleport/WorldTest.tscn"

@@ -42,6 +42,8 @@ touch={
 
 2d_physics/layer_1="DETECTION"
 2d_physics/layer_2="NO_DETECTION"
+2d_physics/layer_6="Player"
+2d_physics/layer_7="Teleport"
 
 [rendering]
 

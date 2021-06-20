@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Teleport/PortalBridge/PortalBridge.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 32 )
+
+[node name="PortalBridge" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="FirstArea" type="Area2D" parent="."]
+position = Vector2( 214.541, 292.902 )
+collision_layer = 64
+collision_mask = 32
+
+[node name="FirstCollision" type="CollisionShape2D" parent="FirstArea"]
+shape = SubResource( 1 )
+
+[node name="FirstExitArea" type="Area2D" parent="FirstArea"]
+collision_layer = 64
+collision_mask = 32
+
+[node name="FirstCollision2" type="CollisionShape2D" parent="FirstArea/FirstExitArea"]
+shape = SubResource( 1 )
+
+[node name="SecondArea" type="Area2D" parent="."]
+position = Vector2( 789.694, 292.902 )
+collision_layer = 64
+collision_mask = 32
+
+[node name="SecondCollision" type="CollisionShape2D" parent="SecondArea"]
+shape = SubResource( 2 )
+
+[node name="SecondExitArea" type="Area2D" parent="SecondArea"]
+collision_layer = 64
+collision_mask = 32
+
+[node name="SecondCollision2" type="CollisionShape2D" parent="SecondArea/SecondExitArea"]
+shape = SubResource( 2 )
+[connection signal="area_entered" from="FirstArea" to="." method="_on_FirstArea_area_entered"]
+[connection signal="area_exited" from="FirstArea/FirstExitArea" to="." method="_on_FirstExitArea_area_exited"]
+[connection signal="area_entered" from="SecondArea" to="." method="_on_SecondArea_area_entered"]
+[connection signal="area_exited" from="SecondArea/SecondExitArea" to="." method="_on_SecondExitArea_area_exited"]
