@@ -6,9 +6,7 @@
 [ext_resource path="res://Assets/Resources/ButtonStylePressed.tres" type="StyleBox" id=4]
 [ext_resource path="res://Scenes/Base.gd" type="Script" id=5]
 
-[node name="BaseContainer" type="VBoxContainer" groups=[
-"load_scene",
-]]
+[node name="BaseContainer" type="VBoxContainer" groups=["load_scene"]]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -41,4 +39,5 @@ anchor_bottom = 0.0
 margin_top = 54.0
 margin_right = 1024.0
 margin_bottom = 600.0
+
 [connection signal="button_down" from="Back" to="." method="_on_Back_button_down"]
