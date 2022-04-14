@@ -1,0 +1,55 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://assets/personaje/idle/i1.png" type="Texture" id=1]
+[ext_resource path="res://escenas/Player/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/personaje/idle/i2.png" type="Texture" id=3]
+[ext_resource path="res://assets/personaje/run/k5.png" type="Texture" id=4]
+[ext_resource path="res://assets/personaje/run/k6.png" type="Texture" id=5]
+[ext_resource path="res://assets/personaje/run/k3.png" type="Texture" id=6]
+[ext_resource path="res://assets/personaje/run/k1.png" type="Texture" id=7]
+[ext_resource path="res://assets/personaje/run/k2.png" type="Texture" id=8]
+[ext_resource path="res://assets/personaje/run/k4.png" type="Texture" id=9]
+[ext_resource path="res://assets/personaje/run/k7.png" type="Texture" id=10]
+[ext_resource path="res://assets/personaje/run/k8.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 21.5, 66.5 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "jump",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "run",
+"speed": 16.0
+} ]
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2( 4.5, 8.5 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 2 )
+animation = "idle"
+playing = true
+
+[node name="Area" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="Area"]
+position = Vector2( 9, 17 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="Area" to="." method="_on_Area_area_entered"]
