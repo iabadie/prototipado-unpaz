@@ -24,3 +24,11 @@ Glosario:
 [Clase 4 - Señales básicas y Grupos](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/clase_4)
 
 [Clase 5 - Repaso Señales + Conexión manual](https://github.com/iabadie/prototipado-unpaz/tree/master/2021/clase_5_senales)
+
+2022
+
+[Clase 3 - movimiento básico](https://github.com/iabadie/prototipado-unpaz/tree/master/2022/clase3)
+
+[Clase 4 - Animaciones y señales básicas](https://github.com/iabadie/prototipado-unpaz/tree/master/2022/Clase4_animacionesySenales)
+
+[Clase 5 - Señales predefinidas, señales custom/manuales y grupos](https://github.com/iabadie/prototipado-unpaz/tree/master/2022/clase5_senales)
