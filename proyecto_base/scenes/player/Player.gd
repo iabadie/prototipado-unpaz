@@ -1,7 +1,6 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const SPEED = 300
-var velocity = Vector2()
 
 func _physics_process(delta):
 	if Input.is_action_just_released("ui_down") or Input.is_action_just_released("ui_up") or Input.is_action_just_released("ui_left") or Input.is_action_just_released("ui_right"):
@@ -15,5 +14,5 @@ func _physics_process(delta):
 		velocity.y = -SPEED
 	if Input.is_action_pressed("ui_down"):
 		velocity.y = SPEED
-	move_and_slide(velocity)
+	move_and_slide()
 	pass
