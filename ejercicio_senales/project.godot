@@ -12,11 +12,17 @@ config_version=5
 
 config/name="ejercicio_senales"
 run/main_scene="res://scenes/Menu/Menu.tscn"
-config/features=PackedStringArray("4.0")
+config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/mode="canvas_items"
 
 [rendering]
 
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
